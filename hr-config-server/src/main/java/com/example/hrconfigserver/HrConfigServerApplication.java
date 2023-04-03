@@ -1,13 +1,13 @@
-package com.example.grconfigserver;
+package com.example.hrconfigserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GrConfigServerApplication {
+public class HrConfigServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GrConfigServerApplication.class, args);
+		SpringApplication.run(HrConfigServerApplication.class, args);
 	}
 
 }
