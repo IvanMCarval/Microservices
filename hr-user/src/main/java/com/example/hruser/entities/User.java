@@ -14,7 +14,7 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String emial;
+    private String email;
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -24,10 +24,10 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(Long id, String name, String emial, String password) {
+    public User(Long id, String name, String email, String password) {
         this.id = id;
         this.name = name;
-        this.emial = emial;
+        this.email = email;
         this.password = password;
     }
 
@@ -47,12 +47,12 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public String getEmial() {
-        return emial;
+    public String getemail() {
+        return email;
     }
 
-    public void setEmial(String emial) {
-        this.emial = emial;
+    public void setemail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
